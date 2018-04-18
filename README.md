@@ -28,7 +28,7 @@
 
 @implementation AlertViewController
 
-/** CycleAlertManager */
+/** 管理者CycleAlertManager */
 
 - (CycleAlertManager *)alertManager{
 
@@ -39,6 +39,7 @@
     }
     
     return  _alertManager;
+
 }
 
 + (instancetype)sharedAlertViewController{
@@ -54,7 +55,9 @@
     if (self) {
  
     }
+
     return self;
+
 }
 
 -(void)showAlertViewController{
@@ -75,18 +78,23 @@
     CGFloat alert_y = ([UIScreen mainScreen].bounds.size.height-alert_h)*0.5;
 
     ///设置相关属性
+
     self.alertManager.presentedFrame = CGRectMake(alert_x, alert_y, alert_w, alert_h);
     
     ///设置背景View颜色
+
     self.alertManager.coverViewBgColor = [UIColor blackColor];
     
     ///设置背景View透明度
+
     self.alertManager.coverViewAlpha = 0.3;
     
     ///设置弹出方向，不设置，默认弹出方向为“中心弹出”
+    
     self.alertManager.AlertDirection = alertViewDirectionTypeCenter;
     
     ///是否可以点击背景，不设置默认可以点击
+    
     self.alertManager.canClickBgView = NO;///设置为NO不可以点击
     
     ///弹出
@@ -95,8 +103,9 @@
 }
 
 -(void)dealloc{
+
     self.alertManager = nil;
+    
 }
 
 多多指点！谢谢
-

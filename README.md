@@ -67,4 +67,5 @@
     self.alertManager = nil;
 }
 
+多多指点！谢谢
 

@@ -8,6 +8,8 @@
 +(instancetype)sharedAlertViewController;
 
 ///弹出,如果需要传值过来，可以定义对应的属性，模型等接收并赋值，跟其他地方一样，小弟就少废话了
+
+
 -(void)showAlertViewController;
 
 

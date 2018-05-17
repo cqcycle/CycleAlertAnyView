@@ -1,6 +1,8 @@
 # CycleAlertAnyView
 （ios8.0,转场动画原理，根据自己需求看是否适合使用此转场ios动画）适用于任何内容弹出，内容面板，样式等全可自定义
 
+cocoaPods1.5.0可导入：pod 'CycleAlertView','1.0.0'
+
 1.创建一个继承自UIViewController,如AlertViewController
 
 如AlertViewController.h
